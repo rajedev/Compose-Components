@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Play CC</string>
+    <string name="home_screen">List of Components</string>
+    <string name="search_component">Search Component</string>
+</resources>
