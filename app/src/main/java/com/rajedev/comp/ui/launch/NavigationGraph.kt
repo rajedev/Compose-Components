@@ -4,7 +4,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.rajedev.comp.component.SearchDropDownScreen
+import com.rajedev.comp.component.AutoCompleteSearch
 
 /**
  * Copyright (c) 2025 /LiveRamp, All rights reserved.
@@ -24,7 +24,7 @@ fun NavigationGraph(navController: NavHostController, initialScreen: String) {
             HomeScreen(navigateTo)
         }
         composable(Screens.SearchComponent.route) {
-            SearchDropDownScreen(navigateTo)
+            AutoCompleteSearch()
         }
     }
 }

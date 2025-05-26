@@ -2,6 +2,7 @@
 <resources>
     <dimen name="padding_16">16dp</dimen>
     <dimen name="home_component_list_height">54dp</dimen>
+    <dimen name="top_space">32dp</dimen>
     <dimen name="divider_thickness">0.5dp</dimen>
 
     <dimen name="text_size_18">18sp</dimen>
