@@ -3,6 +3,7 @@ package com.rajedev.comp.ui.launch
 import androidx.annotation.StringRes
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -31,11 +32,19 @@ sealed class Screens(
     data object SearchComponent :
         Screens(route = "search_component_screen", titleId = R.string.search_component)
 
+    @Serializable
+    data object ExpandableTextComponent :
+        Screens(
+            route = "expandable_text_component_screen",
+            titleId = R.string.expandable_text_component
+        )
+
     companion object {
         fun fromRoute(route: String?): Screens {
             return when (route) {
                 Home.route -> Home
                 SearchComponent.route -> SearchComponent
+                ExpandableTextComponent.route -> ExpandableTextComponent
                 else -> Home // Default to Home if no match
             }
         }
@@ -53,6 +62,10 @@ fun reusableComponents(): List<Component> {
         cId = "searchComponent"
         screens = Screens.SearchComponent
         componentResId = Icons.Default.Search
+    }, buildComponents {
+        cId = "expandableTextComponent"
+        screens = Screens.ExpandableTextComponent
+        componentResId = Icons.Default.Menu
     })
 }
 

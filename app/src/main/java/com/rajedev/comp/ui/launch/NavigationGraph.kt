@@ -5,6 +5,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.rajedev.comp.component.AutoCompleteSearch
+import com.rajedev.comp.component.ExpandableText
 
 /**
  * Copyright (c) 2025 /LiveRamp, All rights reserved.
@@ -25,6 +26,9 @@ fun NavigationGraph(navController: NavHostController, initialScreen: String) {
         }
         composable(Screens.SearchComponent.route) {
             AutoCompleteSearch()
+        }
+        composable(Screens.ExpandableTextComponent.route) {
+            ExpandableText()
         }
     }
 }

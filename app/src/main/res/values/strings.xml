@@ -6,4 +6,6 @@
     <string name="search_label">Search</string>
     <string name="search_placeholder_label">Search</string>
     <string name="search_clear_icon_desc">Clear search input</string>
+
+    <string name="expandable_text_component">Expandable Text</string>
 </resources>
